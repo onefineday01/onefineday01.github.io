@@ -260,6 +260,7 @@ h1 span {
   border-radius: 0.8rem;
   border: 1px solid var(--line);
   background: var(--surface-strong);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
 }
 
 .stats strong {
@@ -273,10 +274,23 @@ h1 span {
   color: var(--muted);
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .stats:hover li {
+    opacity: 0.62;
+  }
+
+  .stats li:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+    border-color: #bfa588;
+    box-shadow: 0 12px 26px rgba(47, 36, 28, 0.14);
+  }
+}
+
 .ticker {
   overflow: hidden;
-  background: #141414;
-  color: #f4f4f4;
+  background: #2f241c;
+  color: #f3e7d8;
 }
 
 .ticker-track {
