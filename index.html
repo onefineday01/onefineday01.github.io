@@ -11,130 +11,148 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Serif:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Manrope:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-a"></div>
-    <div class="bg-orb orb-b"></div>
-    <div class="noise" aria-hidden="true"></div>
+    <div class="page-bg" aria-hidden="true">
+      <div class="bg-shape bg-shape-a"></div>
+      <div class="bg-shape bg-shape-b"></div>
+    </div>
 
-    <header class="site-header">
-      <a class="brand" href="#top">RJ</a>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="resume-link" href="assets/Raj-Resume-2026.pdf" target="_blank" rel="noreferrer">Resume</a>
-    </header>
-
-    <main id="top">
-      <section class="hero reveal">
-        <p class="eyebrow">Backend Developer</p>
-        <h1>
-          Raj Jain
-          <span>Building resilient systems that scale.</span>
-        </h1>
-        <p class="lead">
-          Backend Engineer focused on distributed systems, high-throughput APIs, and reliability engineering.
+    <div class="layout" id="top">
+      <aside class="sidebar reveal">
+        <a class="brand" href="#top">RJ</a>
+        <p class="role">Backend Developer</p>
+        <h2>Raj Jain</h2>
+        <p class="sidebar-lead">
+          Building backend systems that stay fast and predictable under pressure.
         </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Get In Touch</a>
-          <a class="btn btn-ghost" href="assets/Raj-Resume-2026.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-        </div>
-        <ul class="stats">
-          <li><strong>10M+</strong><span>Daily Requests Scaled</span></li>
-          <li><strong>50%</strong><span>Transaction Speed Improvement</span></li>
-          <li><strong>99.9%</strong><span>Uptime for Messaging Systems</span></li>
-        </ul>
-      </section>
+        <nav class="quick-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="resume-link" href="assets/Raj-Resume-2026.pdf" target="_blank" rel="noreferrer">View Resume</a>
+      </aside>
 
-      <section id="about" class="panel reveal">
-        <h2>About</h2>
-        <p>
-          Over the last 5+ years, I have built and optimized systems handling 10M+ daily requests, with deep
-          work across payment integrations, rate limiting, messaging infrastructure, and performance tuning.
-          I care about latency, failure modes, backpressure, and designing systems that behave predictably
-          under load.
-        </p>
-        <p>
-          I enjoy working at the intersection of performance, correctness, and scale, where design decisions
-          affect real-world reliability. I am particularly interested in distributed systems, rate limiting
-          algorithms, queuing systems, and building resilient backend architectures that can tolerate failure
-          gracefully.
-        </p>
-      </section>
-
-      <section id="experience" class="panel reveal">
-        <h2>Work Experience</h2>
-        <article class="timeline-item">
-          <div class="timeline-head">
-            <h3>Senior Software Developer</h3>
-            <p>Walkover Technologies (MSG91) • Indore, India</p>
-            <span>Sep 2020 - Present</span>
+      <main class="content">
+        <section id="home" class="hero reveal">
+          <p class="eyebrow">Available For Backend Roles</p>
+          <h1>
+            Designing reliable,
+            <span>high-throughput backend platforms.</span>
+          </h1>
+          <p class="lead">
+            I design and ship distributed services, rate-limiting systems, and API infrastructure that can scale cleanly
+            while keeping latency and failure impact low.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Contact Me</a>
+            <a class="btn btn-ghost" href="assets/Raj-Resume-2026.pdf" target="_blank" rel="noreferrer">Download CV</a>
           </div>
-          <ul>
-            <li>Architected a Token-IP based rate limiting system to prevent abuse and smooth traffic spikes, reducing overload incidents by 40%.</li>
-            <li>Built a multi-channel OTP authentication system hardened against bot attacks, reducing abuse traffic by 60%.</li>
-            <li>Scaled messaging services to 10M+ daily requests while reducing response latency by 75%.</li>
-            <li>Optimized database queries and consumer workflows, cutting execution time by 60% and improving throughput.</li>
-            <li>Implemented monitoring and anomaly detection for APIs to proactively catch performance regressions.</li>
-            <li>Designed a proxy service layer to improve availability and reduce downtime by 20%.</li>
+          <ul class="stats">
+            <li><strong>10M+</strong><span>Daily Requests Scaled</span></li>
+            <li><strong>75%</strong><span>Latency Reduction</span></li>
+            <li><strong>99.9%</strong><span>Messaging Uptime</span></li>
           </ul>
-        </article>
-      </section>
+        </section>
 
-      <section id="skills" class="panel reveal">
-        <h2>Skills</h2>
-        <div class="chip-grid">
-          <span>Java</span><span>PHP</span><span>Python</span><span>Spring Boot</span><span>Laravel</span><span>Microservices</span>
-          <span>MySQL</span><span>MongoDB</span><span>RabbitMQ</span><span>AWS</span><span>Linux</span><span>REST APIs</span>
-          <span>Datadog</span><span>System Design</span><span>DSA</span>
-        </div>
-      </section>
+        <section class="ticker reveal" aria-label="Core expertise">
+          <div class="ticker-track">
+            <span>Distributed Systems</span>
+            <span>API Reliability</span>
+            <span>Rate Limiting</span>
+            <span>Messaging Infrastructure</span>
+            <span>Performance Engineering</span>
+            <span>Cloud Deployment</span>
+          </div>
+        </section>
 
-      <section class="panel reveal">
-        <h2>Education</h2>
-        <p>
-          <strong>Lakshmi Narain College of Technology & Excellence</strong>, Bhopal, India
-          <br />Bachelor of Engineering in Computer Science Engineering (Jul 2017 - Jul 2021)
-        </p>
-      </section>
+        <section id="about" class="card reveal">
+          <p class="section-id">01</p>
+          <h3>About</h3>
+          <p>
+            Over the last 5+ years, I have built and optimized systems handling 10M+ daily requests, with deep work
+            across payment integrations, rate limiting, messaging infrastructure, and performance tuning.
+          </p>
+          <p>
+            I focus on latency, failure modes, backpressure, and designs that remain stable under load. I enjoy solving
+            backend problems where correctness and scale both matter.
+          </p>
+        </section>
 
-      <section class="panel reveal">
-        <h2>Certifications</h2>
-        <div class="cert-list">
-          <a href="https://drive.google.com/file/d/12fevBM-tkEIMMSlAsNQKsLYUdg8EtUdS/view?usp=sharing" target="_blank" rel="noreferrer">Programming in Java</a>
-          <a href="https://drive.google.com/file/d/1LAxMKrXR5FjbAH9iaTx22sTw1EBzB7eH/view?usp=sharing" target="_blank" rel="noreferrer">Git</a>
-          <a href="https://drive.google.com/file/d/13P_RWLy3XtbPMItKj15WqG1fmi6H0Dms/view?usp=sharing" target="_blank" rel="noreferrer">Algorithmic Toolbox</a>
-          <a href="https://drive.google.com/file/d/1E-qKZU5hxc4dIWi_e_HAz008DpOrS_lZ/view?usp=sharing" target="_blank" rel="noreferrer">Relational Database and SQL</a>
-          <a href="https://drive.google.com/file/d/1t-uL8pAjTZzJWSdR7wEOIhbFF-z0lY3V/view?usp=sharing" target="_blank" rel="noreferrer">Crash Course on Python</a>
-          <a href="https://drive.google.com/file/d/1ntMxqEHmVBAW6vYQaIJP6raY32afcTbh/view?usp=sharing" target="_blank" rel="noreferrer">Programming & DSA Using Python</a>
-        </div>
-      </section>
+        <section id="experience" class="card reveal">
+          <p class="section-id">02</p>
+          <h3>Work Experience</h3>
+          <article class="experience-block">
+            <div class="exp-head">
+              <h4>Senior Software Developer</h4>
+              <p>Walkover Technologies (MSG91) • Indore, India</p>
+              <span>September 2020 - Present</span>
+            </div>
+            <ul>
+              <li>Architected Token-IP rate limiting, reducing overload incidents by 40%.</li>
+              <li>Built multi-channel OTP authentication and cut abuse traffic by 60%.</li>
+              <li>Scaled messaging services to 10M+ daily requests with 75% lower latency.</li>
+              <li>Optimized databases and consumer workflows, improving throughput by 60%.</li>
+              <li>Implemented proactive API monitoring and anomaly detection.</li>
+              <li>Designed proxy service layers that reduced downtime by 20%.</li>
+            </ul>
+          </article>
+        </section>
 
-      <section id="contact" class="panel reveal">
-        <h2>Contact</h2>
-        <p>Open to backend engineering roles and product-focused teams.</p>
-        <div class="links">
-          <a href="tel:+918005727390">+91 80057 27390</a>
-          <a href="mailto:onefineday0105@gmail.com">onefineday0105@gmail.com</a>
-          <a href="https://www.linkedin.com/in/onefineday01" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/onefineday01" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://leetcode.com/onefineday01/" target="_blank" rel="noreferrer">LeetCode</a>
-          <a href="https://www.hackerrank.com/onefineday01" target="_blank" rel="noreferrer">HackerRank</a>
-          <a href="https://www.geeksforgeeks.org/user/raj01/" target="_blank" rel="noreferrer">GeeksforGeeks</a>
-        </div>
-      </section>
-    </main>
+        <section id="skills" class="card reveal">
+          <p class="section-id">03</p>
+          <h3>Skills</h3>
+          <div class="chip-grid">
+            <span>Java</span><span>PHP</span><span>Python</span><span>Spring Boot</span><span>Laravel</span><span>Microservices</span>
+            <span>MySQL</span><span>MongoDB</span><span>RabbitMQ</span><span>AWS</span><span>Linux</span><span>REST APIs</span>
+            <span>Datadog</span><span>System Design</span><span>DSA</span>
+          </div>
+        </section>
 
-    <footer>
-      <p>© <span id="year"></span> Raj Jain. Crafted with focus on performance and clarity.</p>
-    </footer>
+        <section class="card reveal">
+          <p class="section-id">04</p>
+          <h3>Education & Certifications</h3>
+          <p>
+            <strong>Lakshmi Narain College of Technology & Excellence</strong>, Bhopal, India
+            <br />Bachelor of Engineering in Computer Science Engineering (July 2017 - July 2021)
+          </p>
+          <div class="cert-list">
+            <a href="https://drive.google.com/file/d/12fevBM-tkEIMMSlAsNQKsLYUdg8EtUdS/view?usp=sharing" target="_blank" rel="noreferrer">Programming in Java</a>
+            <a href="https://drive.google.com/file/d/1LAxMKrXR5FjbAH9iaTx22sTw1EBzB7eH/view?usp=sharing" target="_blank" rel="noreferrer">Git</a>
+            <a href="https://drive.google.com/file/d/13P_RWLy3XtbPMItKj15WqG1fmi6H0Dms/view?usp=sharing" target="_blank" rel="noreferrer">Algorithmic Toolbox</a>
+            <a href="https://drive.google.com/file/d/1E-qKZU5hxc4dIWi_e_HAz008DpOrS_lZ/view?usp=sharing" target="_blank" rel="noreferrer">Relational Database and SQL</a>
+            <a href="https://drive.google.com/file/d/1t-uL8pAjTZzJWSdR7wEOIhbFF-z0lY3V/view?usp=sharing" target="_blank" rel="noreferrer">Crash Course on Python</a>
+            <a href="https://drive.google.com/file/d/1ntMxqEHmVBAW6vYQaIJP6raY32afcTbh/view?usp=sharing" target="_blank" rel="noreferrer">Programming & DSA Using Python</a>
+          </div>
+        </section>
+
+        <section id="contact" class="card contact reveal">
+          <p class="section-id">05</p>
+          <h3>Contact</h3>
+          <p>Open to backend engineering roles and product-focused teams.</p>
+          <div class="links">
+            <a href="tel:+918005727390">+91 80057 27390</a>
+            <a href="mailto:onefineday0105@gmail.com">onefineday0105@gmail.com</a>
+            <a href="https://www.linkedin.com/in/onefineday01" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/onefineday01" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://leetcode.com/onefineday01/" target="_blank" rel="noreferrer">LeetCode</a>
+            <a href="https://www.hackerrank.com/onefineday01" target="_blank" rel="noreferrer">HackerRank</a>
+            <a href="https://www.geeksforgeeks.org/user/raj01/" target="_blank" rel="noreferrer">GeeksforGeeks</a>
+          </div>
+        </section>
+
+        <footer>
+          <p>© <span id="year"></span> Raj Jain</p>
+        </footer>
+      </main>
+    </div>
 
     <script src="script.js"></script>
   </body>
